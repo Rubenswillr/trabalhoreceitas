@@ -4,26 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./formatos.css">
+    <link rel="stylesheet" href="formatos.css">
+    <link rel="stylesheet" href="receitas.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <title>Receitas</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>     
-                <li><a href="receitas.html"class="selecionado">Receitas</a></li>     
-                <li><a href="cadastro.html">Cadastro</a></li>   
-            </ul> 
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+			<div class="container-fluid">
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link" aria-current="page" href="home.html">Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="receitas.html">Receitas</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="cadastro.html">Cadastro</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
     </header>
-    <main>
-        Receitas
+    <main style="padding: 20px;">
+        <div class="flex gap-7 justify-content-center container">
+            <div class="card" style="width: 200px;">
+                <img src="pave.jpg" class="card-img-top" alt="pavê" height="100" width="200">
+                <div class="card-body">
+                    <h3 class="card-title">Pavê</h3>
+                    <ul class="card-text">
+                        <li>1 pacote de bolacha maisena</li>
+                        <li>1/2 copo de leite</li>
+                        <li>1 colher (sobremesa) da chocolate em pó</li>
+                    </ul>
+                    <hr>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ipsum aspernatur assumenda deleniti nemo nulla, repellendus maiores animi earum. Doloribus minima nam sed, placeat excepturi enim possimus! Sequi, harum sunt!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 200px;">
+                <img src="bolinhochuva.jpg" class="card-img-top" alt="bolinho de chuva" height="100" width="200">
+                <div class="card-body">
+                    <h3 class="card-title">Bolinho de chuva</h3>
+                    <ul class="card-text">
+                        <li>2 ovos</li>
+                        <li>1 xícara de açúcar</li>
+                        <li>1 xícara (chá) de leite</li>
+                        <li>2 e 1/2 xícaras de farinha de trigo</li>
+                        <li>1 colher (sopa) de fermento em pó</li>
+                        <li>3 colheres (sopa) de açúcar para polvilhar</li>
+                        <li>1 colher (sopa) de canela para polvilhar</li>
+                        <li>1 litro de óleo para fritar</li>
+                    </ul>
+                    <hr>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut delectus distinctio sed officia error odit ducimus neque provident, maxime molestias magni similique impedit deserunt sit ex ratione earum tempore vitae.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 200px;">
+                <img src="frangoxadrez.jpg" class="card-img-top" alt="frango xadrez" height="100" width="200">
+                <div class="card-body">
+                    <h3 class="card-title">Frango xadrez</h3>
+                    <ul class="card-text">
+                        <li>2 colheres (sopa) de azeite de oliva</li>
+                        <li>2 cebolas médias cortadas em cubos</li>
+                        <li>2 dentes de alho esmagados</li>
+                        <li>500 g de filé de frango sem pele e cortado em cubos</li>
+                        <li>sal a gosto</li>
+                        <li>1 pimentão verde cortado em cubos</li>
+                        <li>1 pimentão vermelho cortado em cubos</li>
+                        <li>1 pimentão amarelo cortado em cubos</li>
+                        <li>1 xícara (chá) de cogumelos em conserva cortados ao meio</li>
+                        <li>1/4 xícara de molho shoyu</li>
+                        <li>1 colher (sopa) de maisena</li>
+                        <li>1/2 xícara (chá) de água</li>
+                        <li>2 colheres (sopa) de amendoim torrado</li>
+                    </ul>
+                    <hr>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae. Voluptatibus pariatur dolorum neque fugiat voluptatem perspiciatis expedita ullam beatae modi, vitae consequuntur minus laboriosam esse, hic repellat quaerat odit?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
         &copy; Rubens 2023
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
